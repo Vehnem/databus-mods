@@ -34,7 +34,10 @@
 
     <modules>
         <module>databus-mods-lib</module>
+        <module>databus-mods-lib/databus-mods-core</module>
+        <module>databus-mods-lib/databus-mods-worker-spring-boot-starter</module>
         <module>databus-mods-server</module>
+        <module>databus-mods/databus-mods-dummy-worker</module>
         <module>databus-mods/databus-mods-mimetype</module>
         <module>databus-mods/databus-mods-filemetrics</module>
         <module>databus-mods/databus-mods-void</module>
