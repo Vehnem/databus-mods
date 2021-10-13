@@ -2,9 +2,9 @@ package org.dbpedia.databus.mods.model
 
 object ModMetadataFactory {
 
-  def createModActivityMetadata(): ModActivityMetadata = {
-    new ModActivityMetadata()
-  }
+//  def createModActivityMetadata(): ModActivityMetadata = {
+//    new ModActivityMetadata()
+//  }
 
   def createModResult(modResultType: ModResultType): ModResult = {
     modResultType match {

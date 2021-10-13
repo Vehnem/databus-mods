@@ -11,4 +11,12 @@
 
     <artifactId>databus-mods-worker-spring-boot-starter</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.dbpedia.databus-mods</groupId>
+            <artifactId>databus-mods-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 </project>
