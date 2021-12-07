@@ -4,7 +4,7 @@ import java.util
 
 import javax.annotation.Priority
 import org.dbpedia.databus.mods.worker.springboot.controller.{PollingBasedWorkerApi, WorkerApi}
-import org.dbpedia.databus.mods.worker.springboot.service.{ActivityProcessor, ActivityService, DefaultActivityProcessor}
+import org.dbpedia.databus.mods.worker.springboot.service.{ModActivity, ActivityService, DefaultActivityProcessor}
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
@@ -24,8 +24,8 @@ class ModWorkerApiAutoConfig() {
   }
 
   @Bean
-  @ConditionalOnMissingBean(Array(classOf[ActivityProcessor]))
-  def activityProcessor(): ActivityProcessor = {
+  @ConditionalOnMissingBean(Array(classOf[ModActivity]))
+  def activityProcessor(): ModActivity = {
     new DefaultActivityProcessor()
   }
 

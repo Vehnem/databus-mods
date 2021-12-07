@@ -1,14 +1,13 @@
-package org.dbpedia.databus.mods.worker.impl.dummy.sub
+package org.dbpedia.databus.mods.worker.impl.dummy
 
 import org.apache.jena.rdf.model.{ModelFactory, ResourceFactory}
 import org.apache.jena.vocabulary.{DCAT, RDFS}
-import org.dbpedia.databus.dataid.SingleFile
 import org.dbpedia.databus.mods.model.ModActivityMetadata
 import org.dbpedia.databus.mods.worker.springboot.service.ActivityProcessor
 import org.springframework.stereotype.Component
 
 @Component
-class DummyProcessor extends ActivityProcessor {
+class DummyProcessor extends ModActivity {
 
   println("DummyProcessor")
 

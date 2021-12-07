@@ -9,7 +9,7 @@ import org.dbpedia.databus.mods.model.ModActivityMetadata
 import scala.util.Random
 
 
-class ActivityPlan(val dbusSF: SingleFile, activityProcessor: ActivityProcessor) extends Callable[ModActivityMetadata] {
+class ActivityPlan(val dbusSF: SingleFile, activityProcessor: ModActivity) extends Callable[ModActivityMetadata] {
 
   override def call(): ModActivityMetadata = {
     val mam = new ModActivityMetadata(dbusSF)

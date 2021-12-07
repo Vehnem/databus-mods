@@ -6,14 +6,14 @@ import javax.servlet.http.{HttpServletRequest, HttpServletResponse}
 import org.apache.commons.io.IOUtils
 import org.apache.jena.riot.{Lang, RDFDataMgr}
 import org.dbpedia.databus.dataid.SingleFile
-import org.dbpedia.databus.mods.worker.springboot.service.{ActivityPlan, ActivityProcessor, ActivityService}
+import org.dbpedia.databus.mods.worker.springboot.service.{ActivityPlan, ModActivity, ActivityService}
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 
 class PollingBasedWorkerApi(activityService: ActivityService) extends WorkerApi {
 
   @Autowired
-  var activityProcessor: ActivityProcessor = _
+  var activityProcessor: ModActivity = _
 
   private val log = LoggerFactory.getLogger(classOf[PollingBasedWorkerApi])
 

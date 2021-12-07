@@ -7,7 +7,7 @@ import org.dbpedia.databus.mods.model.{ModActivityMetadata, Vocab}
 import org.graalvm.compiler.lir.CompositeValue.Component
 
 @Component
-class DefaultActivityProcessor extends ActivityProcessor {
+class DefaultActivityProcessor extends ModActivity {
 
   override def process(modActivityMetadata: ModActivityMetadata): Unit = {
     val dbusSF = modActivityMetadata.dbusSF
